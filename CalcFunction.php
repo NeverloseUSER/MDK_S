@@ -5,7 +5,7 @@ function calc(string $expressionStr): float
     $operators = ['+', '-', '*', '/','(',')'];
 	
 
-    $Array = str_split($expressionStr);
+    $array = str_split($expressionStr);
 
     foreach ($array as $char)
     {
