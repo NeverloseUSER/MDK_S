@@ -1,15 +1,15 @@
 <?php
-function Calc(string $expressionStr): float
+function calc(string $expressionStr): float
 {
-    $Nums = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-    $Operators = ['+', '-', '*', '/','(',')'];
+    $nums = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+    $operators = ['+', '-', '*', '/','(',')'];
 	
 
     $Array = str_split($expressionStr);
 
     foreach ($Array as $char)
     {
-        if (!in_array($char, $Operators) && !in_array($char, $Nums) || strpos($expressionStr, '/0'))
+        if (!in_array($char, $operators) && !in_array($char, $nums) || strpos($expressionStr, '/0'))
         {
             throw new Exception('Warning!!!');
         }
