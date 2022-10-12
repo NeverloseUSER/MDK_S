@@ -7,7 +7,7 @@ function calc(string $expressionStr): float
 
     $Array = str_split($expressionStr);
 
-    foreach ($Array as $char)
+    foreach ($array as $char)
     {
         if (!in_array($char, $operators) && !in_array($char, $nums) || strpos($expressionStr, '/0'))
         {
@@ -21,7 +21,7 @@ function calc(string $expressionStr): float
 
 try
 {
-    echo ("Ответ: ".Calc("(10+10)*12"));
+    echo ("Ответ: ".calc("(10+10)*12"));
 } 
 catch (Exception $e)
 {
